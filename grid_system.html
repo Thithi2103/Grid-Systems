@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./grid.css">
+    <title>Document</title>
+
+    <style>
+        * {
+        box-sizing: border-box;
+      }
+
+      .course-item {
+          background-color: orange;
+          height: 260px;
+      }
+
+      h1 {
+            text-align: center;
+            color: aliceblue;
+            line-height: 260px;
+            margin: 0;
+      }
+
+      .category {
+          height: 260px;
+          background-color: green;
+      }
+      ul {
+          margin-top: 0;
+      }
+
+      @media (max-width: 1023px) {
+            .course-item {
+                margin-top: 16px;
+            }
+      }
+
+    </style>
+</head>
+
+<!-- 
+    column: .col
+    Prefix class:
+    - c - mobile
+    - m - tablet
+    - l - PC
+ -->
+
+<body>
+    <div class="grid wide ">
+
+
+        
+        <div class="row">
+
+            <div class="col l-3 m-0 c-0 ">
+                <div class="category">
+                    <ul>
+                        <li>Java</li>
+                        <li>Css</li>
+                        <li>Html</li>
+                    </ul>
+                </div>    
+            </div>
+
+            <div class="col l-9 m-12 c-12">
+                <div class="row">
+
+                    <div class="col l-4 m-6 c-12 ">
+                        <div class="course-item">
+                            <h1>Course 1</h1>
+                        </div>
+                    </div>
+
+                    <div class="col l-4 m-6 c-12 ">
+                        <div class="course-item">
+                            <h1>Course 1</h1>
+                        </div>
+                    </div>
+
+                    <div class="col l-4 m-6 c-12 ">
+                        <div class="course-item">
+                            <h1>Course 1</h1>
+                        </div>
+                    </div>
+        
+                </div>
+            </div>
+
+            
+        </div>
+
+    </div>
+</body>
+
+</html>
